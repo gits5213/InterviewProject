@@ -24,6 +24,8 @@ public class JavaLongestStringInStringArray {
       String[] toppings = {"Cat", "Dog", "Elephant"};
       String longestString = getLongestString(toppings);
       System.out.format("longest string: '%s'\n", longestString);
+      System.out.format("longest string: '%s'\n", longestString);
   }
+  
  
 }
