@@ -1,124 +1,94 @@
-package PersonalPactice;
-import java.util.Arrays;
+package DataDriven;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.commons.lang3.ArrayUtils;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriverService;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-//import org.openqa.selenium.phantomjs.PhantomJSDriver;
-//import org.openqa.selenium.phantomjs.PhantomJSDriverService;
-//import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 
 public class FlotioTest {
-	
-	
-	  
 
-	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {		
 		
-		 
-		//WebDriver driver = new HtmlUnitDriver();
+		WebDriver driver = new FirefoxDriver();		
+		driver.get("https://challengers.flood.io/start");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
-				//DesiredCapabilities caps = new DesiredCapabilities();
-			  // caps.setJavascriptEnabled(true);
-			   //caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "C:\\Selenium\\phantomjs-2.0.0-windows\\phantomjs-2.0.0-windows\\bin\\phantomjs.exe");
-			   //WebDriver driver = new PhantomJSDriver(caps);
-			    
-		        WebDriver driver = new FirefoxDriver();
+        // Step-1 (Start button)
+		WebElement Start = driver.findElement(By.name("commit"));
+		Start.click();
+		
+		//Step-2 (select the age and put into the drop-down box)
+		Select dropdownList = new Select(driver.findElement(By.id("challenger_age")));
+		dropdownList.selectByVisibleText("30");
+		
+		//(Extract the List of age)
+		List<WebElement> DropdownList = driver.findElements(By.tagName("option"));
+		System.out.println(DropdownList.size());
+		for (int i=0; i<=DropdownList.size(); i++){
+			System.out.println(DropdownList.get(i).getAttribute("value"));
 				
-				driver.get("https://challengers.flood.io/start");
-				driver.manage().window().maximize();
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				
-
-				WebElement Start = driver.findElement(By.name("commit"));
-				Start.click();
-				
-				Select dropdownList = new Select(driver.findElement(By.id("challenger_age")));
-				dropdownList.selectByVisibleText("30");
-				
-				/*
-				List<WebElement> options = driver.findElements(By.tagName("option"));
-				System.out.println(options.size());
-				for (int i=0; i<options.size (); i++){
-					System.out.println(options.get(i).getText());
-				*/
-						
-
-				WebElement ClickOnNext = driver.findElement(By.xpath("//*[@id='new_challenger']/input[3]"));
-				ClickOnNext.click();
-						
-								
-				WebElement NUMBER1 = driver.findElement(By.xpath("//*[@id='new_challenger']/table/tbody/tr[2]/td[1]/div/span/label"));	
-				WebElement NUMBER2 = driver.findElement(By.xpath("//*[@id='new_challenger']/table/tbody/tr[3]/td[1]/div/span/label"));
-				WebElement NUMBER3 = driver.findElement(By.xpath("//*[@id='new_challenger']/table/tbody/tr[4]/td[1]/div/span/label"));
-				WebElement NUMBER4 = driver.findElement(By.xpath("//*[@id='new_challenger']/table/tbody/tr[5]/td[1]/div/span/label"));
-				WebElement NUMBER5 = driver.findElement(By.xpath("//*[@id='new_challenger']/table/tbody/tr[6]/td[1]/div/span/label"));
-				
-
-				String [] Value = {NUMBER1.getText(), NUMBER2.getText(), NUMBER3.getText(), NUMBER4.getText(), NUMBER5.getText()};
-				for(int i1=0; i1<Value.length; i1++){
-					System.out.println(Value[i1]);
-				}
-				
-				List b = Arrays.asList(Value);
-     			System.out.println(Collections.min(b));
+        //Click on Next Button
+		WebElement ClickOnNext = driver.findElement(By.xpath("//*[@id='new_challenger']/input[3]"));
+		ClickOnNext.click();
+		
+		//Step-3 (Please select and enter the largest order value below)
+		List<WebElement> radio = driver.findElements(By.className("collection_radio_buttons"));	// List of Radio Button	
+		System.out.println(radio.size());    //How many of the radio button
+		
+		List<Integer> list = new ArrayList<>();		
+		for(WebElement radioOptions: radio){		
+			list.add(Integer.parseInt(radioOptions.getText()));
+			System.out.println(radioOptions.getText());
+		}	
+		System.out.println("-----Now printing from new list----");
+		Collections.sort(list);                   //Sorting Ascending  order
+		Collections.reverse(list);		           	//Sorting Descending  order
+		for(int x=0; x<list.size(); x++){			
+			System.out.println(list.get(x));	    // printing the All values related radio button
+			}		
+		System.out.println("Highest value is  : "+list.get(0));	  ////Printing the highest value	
+		driver.findElement(By.xpath("//*[text()='"+list.get(0)+"']")).click();  ////Selecting the Radio Button
 			
-				
-     			WebElement Select1 = driver.findElement(By.xpath("//*[@id='challenger_order_selected_veh3z0x5rgpoaw1fk3fxnss5ejjyut09ls1ickdhczhtdzc5shhjcenxq3uxsjlbpt0--fe11d01de2730dc3009401517c7de671ed9d659b']"));	
-				WebElement Select2 = driver.findElement(By.xpath("//*[@id='challenger_order_selected_wjv0wmljstb0exbydhhtm2nwtuhzdz09ls1uwvi5ywzkewdywuddvtzty2fgvfrrpt0--8cdae37d64751b04e0a396dc36ca1836d12acc6a']"));
-				WebElement Select3 = driver.findElement(By.xpath("//*[@id='challenger_order_selected_mmp0yndlqzdrtdbmskftymhvaurxzz09ls1qd1h6zxnobfq1rlzmszzqs1rgs1z3pt0--4554e4d5bf32e30e7ed70efa256a10d81687c6b9']"));
-				WebElement Select4 = driver.findElement(By.xpath("//*[@id='challenger_order_selected_cxdawwhak2d3uwxiswxidtn5qtgvdz09ls1yqtdut2orde1aceexswtrk0zsdldnpt0--fe9852d5addbdc96bdc523e44780af9ca885a12e']"));
-				WebElement Select5 = driver.findElement(By.xpath("//*[@id='challenger_order_selected_mldlrkirnmpkuwvsuudxcctjyug1zz09ls1uaufxslpuohbsdtczrk1kv2p2zxprpt0--b84b0e36706cec62376067f03ef008d4a821d743']"));
-				
-				
-				//b contains miximum values then click on the radio button
-				
-				if (b == Collections.min(b))
-				{
-					Select1.click();
-				}
-				else if (b == Collections.min(b))
-				{
-					Select2.click();
-				}
-				else if (b == Collections.min(b))
-				{
-					Select3.click();
-				}
-				else if (b == Collections.min(b))
-				{
-					Select4.click();
-				}
-				else if (b == Collections.min(b))
-				{
-					Select5.click();
-				}
-				
-				
-				
-
-				
-				}	
-
-			}
-
-
-	
-
-
-
-
+		WebElement element = driver.findElement(By.xpath("//*[@id='challenger_largest_order']"));  
+		element.sendKeys(Integer.toString(list.get(0)));     //typing the largest value into the input box
+		
+			
+		//Click On Next Button
+		WebElement ClickOnNext1 = driver.findElement(By.name("commit"));
+		ClickOnNext1.click();
+		
+		//Step-4 (Click On Next Button) 
+	    driver.findElement(By.name("commit")).click();
+		
+	    
+	    //Step-5 (Please enter your one time token above)
+	    WebElement OneTimeToken = driver.findElement(By.xpath("//*[@id='new_challenger']/h4/span[2]"));
+	    String Number = OneTimeToken.getText();
+	    System.out.println(Number);
+	    
+	     driver.findElement(By.id("challenger_one_time_token")).clear();
+	     WebElement TypeOneTimeTokenNumber = driver.findElement(By.id("challenger_one_time_token"));
+	     TypeOneTimeTokenNumber.sendKeys(Number);
+	    			    
+	    
+	    //Click On Next Button
+	    WebElement ClickNext = driver.findElement(By.name("commit"));
+	    ClickNext.click();
+	    
+	   
+	    WebElement YouAreDone = driver.findElement(By.xpath("html/body/div[1]/div/div/div/div/div/h2"));
+	    String Confirm = YouAreDone.getText(); System.out.println(Confirm);
+	    Assert.assertEquals("You're Done!", Confirm);
+	    System.out.println("Automation Test Is Successfull!");
+	    
+	    driver.close();
+		
+		}
+	}
+}
