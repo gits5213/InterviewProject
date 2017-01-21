@@ -28,3 +28,17 @@ public class FizBuz {
 			}
 		}
 	}
+
+	Given two sorted int arrays, write a function that 
+	will marge them into a single , sorted array.
+
+	For example:
+
+	a = [1,5,9]
+	b= [3,4,5,10]
+
+	merged(a,b) == [1,5,9,3,4,5,10]
+
+	public int[] merged(int[] a, int[]b){
+		int
+	}
