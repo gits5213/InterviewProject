@@ -92,3 +92,92 @@ public class FlotioTest {
 		}
 	}
 }
+
+
+//or 
+
+public class Flood {
+
+    public static void main(String[] args) {
+
+        WebDriver driver = new FirefoxDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        driver.get("https://challengers.flood.io");
+        driver.findElement(By.xpath("//*[@id='page-top']/header/div/div/a")).click();
+        
+        // Step 1
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebElement startButton = driver.findElement(By.xpath(".//*[@id='new_challenger']/input[3]"));
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(startButton));
+        startButton.click();
+        
+        // Step 2
+        WebElement agebox = driver.findElement(By.xpath(".//*[@id='challenger_age']"));
+        agebox.sendKeys(String.valueOf(getRandomNumber(18, 100)));
+        // agebox.sendkeys("30")
+        // Select sl = new Select(agebox);
+        // sl.selectByVisibleText("30");
+        WebElement nextBotton = driver.findElement(By.xpath(".//*[@id='new_challenger']/input[3]"));
+        nextBotton.click();
+
+        // Step 3
+        WebElement textBox = driver.findElement(By.id("challenger_largest_order"));
+        List<WebElement> radioButtonlist = driver.findElements(By.className("collection_radio_buttons"));
+        System.out.println("Total Number of Index is " + radioButtonlist.size());
+        int maxNumber = 0;
+        int index = 0;
+        for (int i = 0; i <= radioButtonlist.size(); i++) {
+            for (int j = i + 1; j <= radioButtonlist.size(); j++) {
+
+                if (maxNumber <= Integer.valueOf(radioButtonlist.get(i).getText())) {
+                    maxNumber = Integer.valueOf(radioButtonlist.get(i).getText());
+                }
+                if (maxNumber == Integer.valueOf(radioButtonlist.get(i).getText())) {
+                    index = i;
+                }
+            }
+        }
+        System.out.println(String.valueOf("The MaximumNumber is " + maxNumber));
+        textBox.sendKeys(String.valueOf(maxNumber));
+        radioButtonlist.get(index).click();
+
+        nextBotton = driver.findElement(By.xpath(".//*[@id='new_challenger']/input[3]"));
+        nextBotton.click();
+
+        // Step 4
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        nextBotton = driver.findElement(By.xpath(".//*[@id='new_challenger']/input[3]"));
+        // element = wait.until(ExpectedConditions.elementToBeClickable(nextBotton));
+        nextBotton.submit();;
+
+        // Step 5
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        WebElement token = driver.findElement(By.className("token"));
+        String text = token.getText();
+        driver.findElement(By.id("challenger_one_time_token")).sendKeys(text);
+        nextBotton = driver.findElement(By.xpath(".//*[@id='new_challenger']/input[3]"));
+        nextBotton.click();
+        
+        
+        driver.quit();
+    } 
+	
+	 public static int getRandomNumber(int start, int end) {
+        int rdNumber = 0;
+        Random rd = new Random();
+        rdNumber = rd.nextInt(end + 1 - start) + start;
+
+        return rdNumber;
+    }
+
