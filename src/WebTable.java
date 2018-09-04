@@ -1,26 +1,18 @@
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-
 public class WebTable {
-
 	public static void main(String[] args) throws InterruptedException {
-		
-	
-		//-=-------------------------------------------------------------------------------------------------------------------------------------------------------
-				
-	
+		//-=---------------------------------------------------------
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www.cricbuzz.com/cricket-scorecard-archives/scorecard/10719");
 		Thread.sleep(3000L);
 		//row data & row count
 		String xp_start = "//*[@id='Inngs_1']/div[3]/div[";
 		String xp_end = "]/div[1]";
-		
 		Thread.sleep(3000L);
 
 		int rownum=0;
@@ -29,12 +21,10 @@ public class WebTable {
 			rownum++;
 			System.out.println(x);
 		}
-		
 		System.out.println("Row count is : "+rownum);
 		
 		String xpcol_start = "//*[@id='Inngs_1']/div[3]/div[1]/div[";
 		String xpcol_end = "]";
-		
 		Thread.sleep(3000L);
 		
 		int colnum=0;
@@ -43,39 +33,21 @@ public class WebTable {
 			colnum++;
 			System.out.println(x);
 		}
-		
 		System.out.println("Col count is : "+colnum);
-		
 		//extract data from entire table
-		
 		System.out.println("------------------------");
-		
 		
 		String xpth_start = "//*[@id='Inngs_1']/div[3]/div[";
 		String xpth_mid = "]/div[";
 		String xpth_end = "]";
 		
-		
 		for(int rows=1;rows<=rownum;rows++){
-			
 			for(int cols=1;cols<=colnum;cols++){
-				
 				String y = driver.findElement(By.xpath(xpth_start+rows+xpth_mid+cols+xpth_end)).getText();
 				System.out.println(y);
-				
 			}
-			
 			System.out.println(); // print all the values in the sperate line
-			
 		}
-		
-		
-		//---------------------------------------------------or--------------------------------------------------------------
-		
-		
-		
-         
-
+//---------------------------------------------------or--------------------------------------------------------------
 	}
-
 }
