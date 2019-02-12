@@ -1,0 +1,135 @@
+//=====================package ObjectMapProject====class ObjectMap======
+
+package ObjectMapProject;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+
+public class ObjectMap {
+	
+	
+	 Properties properties;
+	  
+	  public ObjectMap(String mapFile)
+	  {
+	      properties = new Properties();
+	      try {
+	      FileInputStream Master = new FileInputStream(mapFile);
+	      properties.load(Master);
+	      Master.close();
+	          }catch (IOException e) {
+	            System.out.println(e.getMessage());
+	         }
+	      }
+	
+	public By getLocator(String ElementName) throws Exception {
+
+        String locator = properties.getProperty(ElementName);//Read value using the logical name as Key
+        String locatorType = locator.split(":")[0]; //Split the value which contains locator type and locator value
+        String locatorValue = locator.split(":")[1];
+        
+        //Return a instance of By class based on type of locator
+          if(locatorType.toLowerCase().equals("id"))
+                return By.id(locatorValue);
+          else if(locatorType.toLowerCase().equals("name"))
+                return By.name(locatorValue);
+          else if((locatorType.toLowerCase().equals("classname")) || (locatorType.toLowerCase().equals("class")))
+                return By.className(locatorValue);
+          else if((locatorType.toLowerCase().equals("tagname")) || (locatorType.toLowerCase().equals("tag")))
+                return By.className(locatorValue);
+          else if((locatorType.toLowerCase().equals("linktext")) || (locatorType.toLowerCase().equals("link")))
+                return By.linkText(locatorValue);
+          else if(locatorType.toLowerCase().equals("partiallinktext"))
+                return By.partialLinkText(locatorValue);
+          else if((locatorType.toLowerCase().equals("cssselector")) || (locatorType.toLowerCase().equals("css")))
+                return By.cssSelector(locatorValue);
+          else if(locatorType.toLowerCase().equals("xpath"))
+                return By.xpath(locatorValue);
+          else
+                  throw new Exception("Locator type '" + locatorType + "' not defined!!");
+        }
+
+}
+
+
+//=========package ObjectMapProject==========class logIn===========
+
+package ObjectMapProject;
+
+import org.openqa.selenium.WebDriver;
+import static org.testng.AssertJUnit.assertEquals;
+
+import java.util.Map;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class logIn {
+	  public WebDriver driver;
+	  public ObjectMap objmap;
+	  
+	  @BeforeTest
+	  public void setUp() throws Exception {
+	 
+	  String dir = System.getProperty("user.dir");
+	  String chromDir = dir + "/Browser/chromedriver";
+	  System.setProperty("webdriver.chrome.driver", chromDir);
+		  
+	  driver = new ChromeDriver();
+	  driver.get("https://onlinebanking.tdbank.com/#/authentication/login");
+	  Thread.sleep(3000);
+	  }
+	  
+	  @Test
+	  public void login() throws Exception{
+	    String workingDir=System.getProperty("user.dir");
+	     objmap = new ObjectMap (workingDir+"/ObjectPropertiesFile/objectmap.properties");
+	   
+	     
+	     WebElement username = driver.findElement(objmap.getLocator("Username_field"));
+	     username.sendKeys("test");
+	 
+	     WebElement password = driver.findElement(objmap.getLocator("Password_field"));
+	     password.sendKeys("XXXXXX");
+	   
+	     WebElement login = driver.findElement(objmap.getLocator("Login_button"));
+	     //login.click();
+	     Thread.sleep(3000);
+	    
+	     WebElement onlineuser=driver.findElement(objmap.getLocator("online_user"));
+	     assertEquals("Welcome to Online Banking", onlineuser.getText());
+	     
+	  }
+	  @AfterTest
+	  public void tearDown() throws Exception {
+	              driver.quit();
+	       }
+	  
+	  
+	 
+	  
+	  //List & Array
+	  //http://www.abodeqa.com/arrays-in-java-and-its-implementation-in-selenium-webdriver/
+	  
+	  /*
+	  How to switch between the TAB Window?
+
+			  ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
+			  driver.switchTo().window(tabs2.get(1));
+	  
+	  */
+	
+	}
+  
+  //=======================objectmap.properties===Package(ObjectPropertiesFile)=================
+
+Username_field =cssSelector:#formElement_1
+Password_field =cssSelector:#formElement_2
+Login_button =xpath://*[@id="loginForm"]/button
+online_user = xpath:/html/body/div[5]/div[2]/div/div[1]/div/h1
