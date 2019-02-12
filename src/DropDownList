@@ -12,3 +12,73 @@ public void getElementText(){
         System.out.println(objElement.getText());
     }
 }
+
+//Select an element from the dropdown list
+Select listElement = new Select(driver.findElement(By.id("Country")));
+listElement.selectByVisibleText("2010");
+listElement.selectByIndex(4);
+listElement.selectByValue("2014");
+
+//or
+
+WebElement mySelectElm = driver.findElement(By.id("mySelectID")); 
+Select mySelect= new Select(mySelectElm);
+selMySelect.selectByVisibleText("Option");
+
+//and
+WebElement mySelectElm = driver.findElement(By.id("mySelectID")); 
+Select mySelect= new Select(mySelectElm);
+WebElement option = mySelect.getFirstSelectedOption();
+System.out.println(option.getText()); //prints "Option"
+
+//and 
+WebElement mySelectElm = driver.findElement(By.id("mySelectID")); 
+Select mySelect= new Select(mySelectElm);
+List<WebElement> options = mySelect.getOptions();
+for (WebElement option : options) {
+    System.out.println(option.getText()); //Prints "Option", followed by "Not Option"
+}
+
+//In this example, we find all the options, iterate over them, and click the one we want. This is useful if you have a more complex criteria.
+WebElement mySelectElm = driver.findElement(By.id("mySelectID")); 
+Select mySelect= new Select(mySelect);
+List<WebElement> options = mySelect.getOptions();
+for (WebElement option : options) {
+    if (option.getText().equalsIgnoreCase("Option") {
+        option.click();
+    }
+}
+
+//How to compare values from the list or from dropdown list in webdriver (Java)?
+//The reason you are getting so many different matched is because you print it as you go through the loop. My personal suggestion,
+//I like the KISS method, change the code to something like the following:
+
+public class Ex1 {
+
+private WebDriver d;
+
+@Test
+public void testUntitled() throws Exception {
+    d = new FirefoxDriver();
+    d.get("http://register.rediff.com/commonreg/index.php?redr=http://portfolio.rediff.com/money/jsp/loginnew.jsp?redr=home");
+
+    int count = 0;
+    String[] exp = {"Month", "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"};
+    WebElement dropdown = d.findElement(By.id("date_mon"));
+    Select select = new Select(dropdown);
+
+    List<WebElement> options = select.getOptions();
+    for (WebElement we : options) {
+        for (int i = 0; i < exp.length; i++) {
+            if (we.getText().equals(exp[i])) {
+                count++;
+            }
+        }
+    }
+    if (count == exp.length) {
+        System.out.println("matched");
+    } else {
+        System.out.println("Houston, we have a problem.");
+    }
+}
+}
