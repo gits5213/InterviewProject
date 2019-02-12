@@ -1,0 +1,116 @@
+
+//Browser - Internet Explorer 
+String baseDir = System.getProperty("user.dir");
+String ieDir = baseDir + "//internetExploerDriver.exe";
+
+System.setProperty("webdriver.ie.driver", ieDir);
+WebDriver driver = new InternetExplorerDriver();
+driver.get("http://www.google.com");
+
+//Browser - Chrome
+String baseDir = System.getProperty("user.dir");
+String chromeDir = baseDir + "//chromeDriver.exe";
+
+System.setProperty("webdriver.chrome.driver", chromeDir);
+WebDriver driver = new ChromeDriver();
+driver.get("http://www.google.com");
+
+//====================================================
+
+//Create a config file which will contain browser name. Implement a method for interaction with the config file
+//And you can use below code for initialize browsers:
+
+string browser = GetConfigProperty("browser"); //Get browser name from the config
+        switch (browser)
+        {
+            case "chrome":
+                driver = new ChromeDriver();
+                break;
+            case "firefox":
+                driver = new FirefoxDriver();
+                break;
+            case "InternetExplorer":
+                driver = new InternetExplorerDriver();
+                break;
+        }
+//========================================================
+//https://www.toolsqa.com/testng/what-is-testng/ 
+@Parameters("browser")
+  @BeforeClass
+  // Passing Browser parameter from TestNG xml
+  public void beforeTest(String browser) {
+    if(browser.equalsIgnoreCase("firefox")) {
+     driver = new FirefoxDriver();
+    }else if (browser.equalsIgnoreCase("ie")) { 
+     System.setProperty("webdriver.ie.driver", "D:\ToolsQA\OnlineStore\drivers\IEDriverServer.exe");
+     driver = new InternetExplorerDriver();
+    } else if (browser.equalsIgnoreCase("chrome")) { 
+     System.setProperty("webdriver.chrome.driver", "D:\ToolsQA\OnlineStore\drivers\IEDriverServer.exe");
+     driver = new ChromeDriver();
+    } 
+    driver.get("http://www.itnycusa.com"); 
+  }
+
+//TestNG.xml
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+  <suite name="Suite" parallel="none">
+     <test name="FirefoxTest">
+     <parameter name="browser" value="firefox" />
+     <classes>
+     <class name="automationFramework.MultiBrowser" />
+     </classes>
+     </test>
+     <test name="IETest">
+     <parameter name="browser" value="ie" />
+     <classes>
+     <class name="automationFramework.MultiBrowser" />
+     </classes>
+     </test>
+  </suite>
+
+//====================================================
+
+WebDriver driver = null;
+String[] browsers = {"chrome", "firefox", "ie", "edge", "opera"};
+for (String browser : browsers) {
+    switch(browser) {
+        case "chrome":
+            driver = new ChromeDriver();
+            break;
+
+        case "firefox" = new FirefoxDriver();
+            driver = new FirefoxDriver();
+            break;
+
+        case "ie":
+            driver = new InternetExplorerDriver();
+            break;
+
+        case "edge":
+            driver = new EdgeDriver();
+            break;
+
+        case "opera":
+            driver = new OperaDriver();
+            break;
+    }
+
+    doWhatYouNeedWithDifferentBrowser(driver);
+}
+
+
+//=================================
+
+try {
+  driver.get(“http://newtours.demoaut.com”);
+  driver.findElement(By.name(“username”)).sendKeys(“mercury”);
+  driver.findElement(By.name(“password”)).sendKeys(“mercury”);
+  driver.findElement(By.name(“login”)).click();
+  driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+  Assert.assertTrue(driver.getTitle().equals(“Home Page”));
+  Reporter.log(“Assertion Passed”);
+  driver.findElement(By.linkText(“(Logout)”)).click();
+} catch(Exception e){
+  e.printStackTrace();
+  }
+}
