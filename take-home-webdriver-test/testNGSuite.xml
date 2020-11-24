@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="TestSuite">
+    <classes>
+      <class name="testCases.LoginSuccess"/>
+      <class name="testCases.LoginFailure"/>
+      <class name="testCases.Dropdown"/>
+      <class name="testCases.Drag_and_drop"/>
+      <class name="testCases.CheckBoxes"/>
+      <class name="testCases.Context_menu"/>
+      <class name="testCases.Dynamic_content"/>
+      <class name="testCases.Dynamic_controls"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="TestSuite(failed)">
+    <classes>
+      <class name="testCases.LoginFailure">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.LoginFailure -->
+      <class name="testCases.CheckBoxes">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.CheckBoxes -->
+      <class name="testCases.Dynamic_content">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.Dynamic_content -->
+      <class name="testCases.Drag_and_drop">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="drag_and_drop"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.Drag_and_drop -->
+      <class name="testCases.Dropdown">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.Dropdown -->
+      <class name="testCases.Context_menu">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.Context_menu -->
+      <class name="testCases.LoginSuccess">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.LoginSuccess -->
+      <class name="testCases.Dynamic_controls">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.Dynamic_controls -->
+    </classes>
+  </test> <!-- TestSuite(failed) -->
+</suite> <!-- Failed suite [Suite] -->
