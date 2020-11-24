@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-24T00:35:34Z" name="Suite" finished-at="2020-11-24T00:35:59Z" duration-ms="24799">
+    <groups>
+    </groups>
+    <test started-at="2020-11-24T00:35:34Z" name="TestSuite" finished-at="2020-11-24T00:35:59Z" duration-ms="24799">
+      <class name="testCases.Dropdown">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Dropdown@7ba18f1b]" started-at="2020-11-23T19:35:39Z" name="beforeClass" finished-at="2020-11-23T19:35:39Z" duration-ms="858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Dropdown@7ba18f1b]" started-at="2020-11-23T19:35:39Z" name="beforeMethod" finished-at="2020-11-23T19:35:40Z" duration-ms="547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="dropdown()[pri:0, instance:testCases.Dropdown@7ba18f1b]" started-at="2020-11-23T19:35:40Z" name="dropdown" finished-at="2020-11-23T19:35:41Z" duration-ms="1225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdown -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Dropdown@7ba18f1b]" started-at="2020-11-23T19:35:41Z" name="afterClass" finished-at="2020-11-23T19:35:41Z" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Dropdown@7ba18f1b]" started-at="2020-11-23T19:35:41Z" name="afterMethod" finished-at="2020-11-23T19:35:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.Dropdown -->
+      <class name="testCases.Dynamic_content">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Dynamic_content@aecb35a]" started-at="2020-11-23T19:35:53Z" name="beforeClass" finished-at="2020-11-23T19:35:54Z" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Dynamic_content@aecb35a]" started-at="2020-11-23T19:35:54Z" name="beforeMethod" finished-at="2020-11-23T19:35:55Z" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="dynamic_content()[pri:0, instance:testCases.Dynamic_content@aecb35a]" started-at="2020-11-23T19:35:55Z" name="dynamic_content" finished-at="2020-11-23T19:35:57Z" duration-ms="2272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_content -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Dynamic_content@aecb35a]" started-at="2020-11-23T19:35:57Z" name="afterMethod" finished-at="2020-11-23T19:35:57Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Dynamic_content@aecb35a]" started-at="2020-11-23T19:35:57Z" name="afterClass" finished-at="2020-11-23T19:35:57Z" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Dynamic_content -->
+      <class name="testCases.CheckBoxes">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.CheckBoxes@1068e947]" started-at="2020-11-23T19:35:45Z" name="beforeClass" finished-at="2020-11-23T19:35:46Z" duration-ms="838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.CheckBoxes@1068e947]" started-at="2020-11-23T19:35:46Z" name="beforeMethod" finished-at="2020-11-23T19:35:46Z" duration-ms="389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkBoxes()[pri:0, instance:testCases.CheckBoxes@1068e947]" started-at="2020-11-23T19:35:46Z" name="checkBoxes" finished-at="2020-11-23T19:35:50Z" duration-ms="3207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxes -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.CheckBoxes@1068e947]" started-at="2020-11-23T19:35:50Z" name="afterMethod" finished-at="2020-11-23T19:35:50Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.CheckBoxes@1068e947]" started-at="2020-11-23T19:35:50Z" name="afterClass" finished-at="2020-11-23T19:35:50Z" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.CheckBoxes -->
+      <class name="testCases.Drag_and_drop">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Drag_and_drop@2f8f5f62]" started-at="2020-11-23T19:35:41Z" name="beforeClass" finished-at="2020-11-23T19:35:42Z" duration-ms="915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Drag_and_drop@2f8f5f62]" started-at="2020-11-23T19:35:42Z" name="beforeMethod" finished-at="2020-11-23T19:35:43Z" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="drag_and_drop()[pri:0, instance:testCases.Drag_and_drop@2f8f5f62]" started-at="2020-11-23T19:35:43Z" name="drag_and_drop" finished-at="2020-11-23T19:35:45Z" duration-ms="2470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drag_and_drop -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Drag_and_drop@2f8f5f62]" started-at="2020-11-23T19:35:45Z" name="afterMethod" finished-at="2020-11-23T19:35:45Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Drag_and_drop@2f8f5f62]" started-at="2020-11-23T19:35:45Z" name="afterClass" finished-at="2020-11-23T19:35:45Z" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Drag_and_drop -->
+      <class name="testCases.LoginSuccess">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.LoginSuccess@134593bf]" started-at="2020-11-23T19:35:34Z" name="beforeClass" finished-at="2020-11-23T19:35:36Z" duration-ms="1819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.LoginSuccess@134593bf]" started-at="2020-11-23T19:35:36Z" name="beforeMethod" finished-at="2020-11-23T19:35:36Z" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="userAbleToValidateErrorTextOnSignInpage()[pri:0, instance:testCases.LoginSuccess@134593bf]" started-at="2020-11-23T19:35:36Z" name="userAbleToValidateErrorTextOnSignInpage" finished-at="2020-11-23T19:35:37Z" duration-ms="527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAbleToValidateErrorTextOnSignInpage -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.LoginSuccess@134593bf]" started-at="2020-11-23T19:35:37Z" name="afterClass" finished-at="2020-11-23T19:35:37Z" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.LoginSuccess@134593bf]" started-at="2020-11-23T19:35:37Z" name="afterMethod" finished-at="2020-11-23T19:35:37Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.LoginSuccess -->
+      <class name="testCases.LoginFailure">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.LoginFailure@4bb4de6a]" started-at="2020-11-23T19:35:37Z" name="beforeClass" finished-at="2020-11-23T19:35:38Z" duration-ms="835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.LoginFailure@4bb4de6a]" started-at="2020-11-23T19:35:38Z" name="beforeMethod" finished-at="2020-11-23T19:35:38Z" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="userAbleToValidateErrorTextOnSignInpage()[pri:0, instance:testCases.LoginFailure@4bb4de6a]" started-at="2020-11-23T19:35:38Z" name="userAbleToValidateErrorTextOnSignInpage" finished-at="2020-11-23T19:35:39Z" duration-ms="509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAbleToValidateErrorTextOnSignInpage -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.LoginFailure@4bb4de6a]" started-at="2020-11-23T19:35:39Z" name="afterClass" finished-at="2020-11-23T19:35:39Z" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.LoginFailure@4bb4de6a]" started-at="2020-11-23T19:35:39Z" name="afterMethod" finished-at="2020-11-23T19:35:39Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.LoginFailure -->
+      <class name="testCases.Dynamic_controls">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Dynamic_controls@5fcd892a]" started-at="2020-11-23T19:35:57Z" name="beforeClass" finished-at="2020-11-23T19:35:58Z" duration-ms="903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Dynamic_controls@5fcd892a]" started-at="2020-11-23T19:35:58Z" name="beforeMethod" finished-at="2020-11-23T19:35:58Z" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="userAbleToValidateErrorTextOnSignInpage()[pri:0, instance:testCases.Dynamic_controls@5fcd892a]" started-at="2020-11-23T19:35:58Z" name="userAbleToValidateErrorTextOnSignInpage" finished-at="2020-11-23T19:35:59Z" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAbleToValidateErrorTextOnSignInpage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Dynamic_controls@5fcd892a]" started-at="2020-11-23T19:35:59Z" name="afterMethod" finished-at="2020-11-23T19:35:59Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Dynamic_controls@5fcd892a]" started-at="2020-11-23T19:35:59Z" name="afterClass" finished-at="2020-11-23T19:35:59Z" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Dynamic_controls -->
+      <class name="testCases.Context_menu">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Context_menu@7dc222ae]" started-at="2020-11-23T19:35:50Z" name="beforeClass" finished-at="2020-11-23T19:35:51Z" duration-ms="828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Context_menu@7dc222ae]" started-at="2020-11-23T19:35:51Z" name="beforeMethod" finished-at="2020-11-23T19:35:51Z" duration-ms="450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="context_menu()[pri:0, instance:testCases.Context_menu@7dc222ae]" started-at="2020-11-23T19:35:51Z" name="context_menu" finished-at="2020-11-23T19:35:53Z" duration-ms="2268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- context_menu -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Context_menu@7dc222ae]" started-at="2020-11-23T19:35:53Z" name="afterMethod" finished-at="2020-11-23T19:35:53Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Context_menu@7dc222ae]" started-at="2020-11-23T19:35:53Z" name="afterClass" finished-at="2020-11-23T19:35:53Z" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Context_menu -->
+    </test> <!-- TestSuite -->
+  </suite> <!-- Suite -->
+</testng-results>
