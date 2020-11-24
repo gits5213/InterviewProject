@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import testPages.LoginPage;
 import utilities.Utils;
 
-public class LoginFailure extends BaseTest {
+public class LoginFailure_2 extends BaseTest {
 	
 	@Test
 	public void userAbleToValidateErrorTextOnSignInpage(){

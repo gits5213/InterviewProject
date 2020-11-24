@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import testPages.DropdownPage;
 import utilities.Utils;
 
-public class Dropdown extends BaseTest {
+public class Dropdown_6 extends BaseTest {
 	
 	@Test
 	public void dropdown(){

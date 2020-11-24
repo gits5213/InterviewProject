@@ -6,7 +6,7 @@ import testPages.HomePage;
 import testPages.LoginPage;
 import utilities.Utils;
 
-public class LoginSuccess extends BaseTest {
+public class LoginSuccess_1 extends BaseTest {
 	
 	@Test
 	public void userAbleToValidateErrorTextOnSignInpage(){

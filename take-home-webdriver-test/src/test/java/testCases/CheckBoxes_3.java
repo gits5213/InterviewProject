@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import testPages.CheckboxesPage;
 import utilities.Utils;
 
-public class CheckBoxes extends BaseTest {
+public class CheckBoxes_3 extends BaseTest {
 	
 	@Test
 	public void checkBoxes(){

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import testPages.context_menuPage;
 import utilities.Utils;
 
-public class Context_menu extends BaseTest {
+public class Context_menu_4 extends BaseTest {
 	
 	@Test
 	public void context_menu(){

@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import testPages.Dynamic_contentPage;
 import utilities.Utils;
 
-public class Dynamic_content extends BaseTest {
+public class Dynamic_content_7 extends BaseTest {
 	
 	String returnJqueryReady = "return jQuery.ready";
 	String returnDocumentReadyState = "return document.readyState";

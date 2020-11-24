@@ -8,7 +8,7 @@ import testPages.Drag_and_dropPage;
 import testPages.context_menuPage;
 import utilities.Utils;
 
-public class Drag_and_drop extends BaseTest {
+public class Drag_and_drop_5 extends BaseTest {
 	
 	@Test
 	public void drag_and_drop(){
