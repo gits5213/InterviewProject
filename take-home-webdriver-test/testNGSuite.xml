@@ -10,6 +10,7 @@
       <class name="testCases.Context_menu"/>
       <class name="testCases.Dynamic_content"/>
       <class name="testCases.Dynamic_controls"/>
+      <class name="testCases.DynamicLoading_9"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

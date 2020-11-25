@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import testPages.Dynamic_controlsPage;
 import utilities.Utils;
 
-public class Dynamic_controls extends BaseTest {
+public class Dynamic_controls_8 extends BaseTest {
 	
 	@Test
 	public void userAbleToValidateErrorTextOnSignInpage(){

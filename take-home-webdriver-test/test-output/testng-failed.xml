@@ -1,73 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="TestSuite(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
     <classes>
-      <class name="testCases.LoginFailure">
+      <class name="testCases.FileDownload_10">
         <methods>
+          <include name="FileDownload_10"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- testCases.LoginFailure -->
-      <class name="testCases.CheckBoxes">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- testCases.CheckBoxes -->
-      <class name="testCases.Dynamic_content">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- testCases.Dynamic_content -->
-      <class name="testCases.Drag_and_drop">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="drag_and_drop"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- testCases.Drag_and_drop -->
-      <class name="testCases.Dropdown">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- testCases.Dropdown -->
-      <class name="testCases.Context_menu">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- testCases.Context_menu -->
-      <class name="testCases.LoginSuccess">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- testCases.LoginSuccess -->
-      <class name="testCases.Dynamic_controls">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- testCases.Dynamic_controls -->
+      </class> <!-- testCases.FileDownload_10 -->
     </classes>
-  </test> <!-- TestSuite(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
