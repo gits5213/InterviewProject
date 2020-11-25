@@ -19,5 +19,7 @@ public class Utils {
 	public static final String COLUMN_A = "B";
 	public static final String FIRST_SELECTED_VALUE_IN_DROPDOWN = "Option 1";
 	public static final String SECOND_SELECTED_VALUE_IN_DROPDOWN = "Option 2";
+	public static final String HELLO_WORLD_TEXT = "Hello World!";
+	
 
 }

@@ -9,12 +9,15 @@
 
 ## Steps
 1. Pull Docker image for the-internet app:
+	
 	`docker pull gprestes/the-internet`
   
 2. Run the following command: 
+    
     `docker run -d -p 7080:5000 gprestes/the-internet`
   
 3. Set the following BaseUrl for your tests:
+   	
    	`http://localhost:7080`
    
 4. Use ChromeDriver to write Tests for the following scenarios in Java:
@@ -51,48 +54,59 @@
 ### Test Specific Rubrics
 
 1. Login Success
-   * Page Object Model for the login page should be provided.
-   + Test is able to login successfully.
-   * Test uses an assertion to make sure User has logged in.
+
+	* Page Object Model for the login page should be provided.
+	* Test is able to login successfully.
+	* Test uses an assertion to make sure User has logged in.
 
 2. Login Failure
-   * Page Object Model for the login page should be used.
-   + Test is not able to login with wrong credentials.
-   - Test uses assertions to check Login failed for incorrect user and password.
+
+	* Page Object Model for the login page should be used.
+	* Test is not able to login with wrong credentials.
+	* Test uses assertions to check Login failed for incorrect user and password.
 
 3. Checkboxes
-   * Test checks and unchecks checkboxes.
-   + Test uses assertions to make sure boxes were properly checked and unchecked.
+
+	* Test checks and unchecks checkboxes.
+	* Test uses assertions to make sure boxes were properly checked and unchecked.
 4. Context Menu
-   * Test right clicks on the context menu.
-   + Test asserts the alert menu text.
+
+	* Test right clicks on the context menu.
+	* Test asserts the alert menu text.
 5. Drag and Drop
-   * Test drags element A to element B.
-   + Test asserts that the text on element A and B are switched.
+
+	* Test drags element A to element B.
+	* Test asserts that the text on element A and B are switched.
 6. Dropdown
-   * Test selects Option 1 and Option 2 from the drop down menu.
-   + Test asserts Option 1 and Option 2 are selected.
+
+	* Test selects Option 1 and Option 2 from the drop down menu.
+	* Test asserts Option 1 and Option 2 are selected.
 7. Dynamic Content
-   * Test refreshes the page a couple of times.
-   + Test asserts that the content changes on each refresh.
+
+	* Test refreshes the page a couple of times.
+	* Test asserts that the content changes on each refresh.
 8. Dynamic Controls
-   * Test clicks on the Remove Button and uses explicit wait.
-   + Test asserts that the checkbox is gone.
-   - Test clicks on Add Button and uses explicit wait.
-   * Test asserts that the checkbox is present.
-   + Test clicks on the Enable Button and uses explicit wait.
-   * Test asserts that the text box is enabled.
-   + Test clicks on the Disable Button and uses explicit wait.
-   - Test asserts that the text box is disabled.
+
+	* Test clicks on the Remove Button and uses explicit wait.
+	* Test asserts that the checkbox is gone.
+	* Test clicks on Add Button and uses explicit wait.
+	* Test asserts that the checkbox is present.
+	* Test clicks on the Enable Button and uses explicit wait.
+	* Test asserts that the text box is enabled.
+	* Test clicks on the Disable Button and uses explicit wait.
+	* Test asserts that the text box is disabled.
 9. Dynamic Loading
-   * Test clicks the start button and uses explicit wait.
-   + Test asserts that “Hello World!” text is displayed.
+
+	* Test clicks the start button and uses explicit wait.
+	* Test asserts that “Hello World!” text is displayed.
 10. File Download
-    * Test clicks on the file.
-    + Test asserts that the file is downloaded.
+
+	* Test clicks on the file.
+	* Test asserts that the file is downloaded.
 11. File Upload
-    * Test uses Upload Button or Drag and Drop to upload a file.
-    + Test asserts that the file is uploaded.
+
+	* Test uses Upload Button or Drag and Drop to upload a file.
+	* Test asserts that the file is uploaded.
 12. Floating Menu
     * Test scrolls the page.
     + Test asserts that the floating menu is still displayed.

@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="testCases.Drag_and_drop">
+      <class name="testCases.FileDownload_10">
         <methods>
+          <include name="FileDownload_10"/>
           <include name="beforeMethod"/>
-          <include name="userAbleToValidateErrorTextOnSignInpage"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- testCases.Drag_and_drop -->
+      </class> <!-- testCases.FileDownload_10 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
