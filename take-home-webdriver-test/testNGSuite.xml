@@ -11,6 +11,8 @@
       <class name="testCases.Dynamic_content"/>
       <class name="testCases.Dynamic_controls"/>
       <class name="testCases.DynamicLoading_9"/>
+      <class name="testCases.FileDownload_10"/>
+      <class name="testCases.FileUpload_11"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
