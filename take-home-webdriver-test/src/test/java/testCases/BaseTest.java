@@ -96,5 +96,11 @@ public class BaseTest {
         robot.keyRelease(KeyEvent.VK_ENTER);
     }
 	
+	public int switchIframe(int number) {
+		driver.switchTo().frame(number); 
+		return number;
+		
+	}
+	
 
 }

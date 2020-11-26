@@ -20,6 +20,9 @@ public class Utils {
 	public static final String FIRST_SELECTED_VALUE_IN_DROPDOWN = "Option 1";
 	public static final String SECOND_SELECTED_VALUE_IN_DROPDOWN = "Option 2";
 	public static final String HELLO_WORLD_TEXT = "Hello World!";
+	public static final String TEXT_AREA_TEXT = "I switched IFrame Your content goes here.";
+	public static final String I_SWITCHED_IFRAME = "I switched IFrame ";
+	
 	
 
 }
