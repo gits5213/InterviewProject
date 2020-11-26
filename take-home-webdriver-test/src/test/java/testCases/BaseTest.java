@@ -6,6 +6,12 @@ import utilities.Utils;
 
 import org.testng.annotations.BeforeClass;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
@@ -17,6 +23,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 
 public class BaseTest {
+	//https://github.com/swtestacademy?tab=repositories
 	
 	public WebDriver driver;
 	
@@ -27,6 +34,7 @@ public class BaseTest {
 		System.setProperty(Utils.WEB_DRIVER_PATH, browserDriver);
 		
 		//Only for Download file 
+
 		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
         chromePrefs.put("profile.default_content_settings.popups", 0);
         chromePrefs.put("download.default_directory", System.getProperty("user.dir"));
@@ -34,8 +42,8 @@ public class BaseTest {
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("prefs", chromePrefs);
 		//
-        
-		driver = new ChromeDriver(options);
+       
+		driver = new ChromeDriver(options); //options
 	}
 	
 	@BeforeMethod
@@ -62,22 +70,31 @@ public class BaseTest {
 		}catch(Exception e) {
 			}
 		}
-	//For Download 
-//	protected File getLatestFilefromDir(String dirPath){
-//	    File dir = new File(dirPath);
-//	    File[] files = dir.listFiles();
-//	    if (files == null || files.length == 0) {
-//	        return null;
-//	    }
-//	
-//	    File lastModifiedFile = files[0];
-//	    for (int i = 1; i < files.length; i++) {
-//	       if (lastModifiedFile.lastModified() < files[i].lastModified()) {
-//	           lastModifiedFile = files[i];
-//	       }
-//	    }
-//	    return lastModifiedFile;
-//	}
+	//For Upload 
+	public void uploadFileWithRobot (String imagePath) {
+        StringSelection stringSelection = new StringSelection(imagePath);
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        clipboard.setContents(stringSelection, null);
+ 
+        Robot robot = null;
+ 
+        try {
+            robot = new Robot();
+        } catch (AWTException e) {
+            e.printStackTrace();
+        }
+ 
+        robot.delay(250);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.delay(150);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+    }
 	
 
 }
