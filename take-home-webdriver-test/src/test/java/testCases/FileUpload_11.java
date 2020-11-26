@@ -30,5 +30,6 @@ public class FileUpload_11 extends BaseTest {
 		sleepTest(5000);
 		Assert.assertTrue(wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#uploaded-files"))).getText().equals("logo.png"));
 		sleepTest(5000);
+
 	}
 }

@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2020-11-26T14:34:56Z" name="Default suite" finished-at="2020-11-26T14:35:03Z" duration-ms="7333">
     <groups>
     </groups>
@@ -89,10 +90,34 @@ Session ID: bb7a055c39128ed4c55f6f740a45aaad
           </reporter-output>
         </test-method> <!-- afterMethod -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.FileUpload_11@38afe297]" started-at="2020-11-26T09:35:03Z" name="afterClass" finished-at="2020-11-26T09:35:03Z" duration-ms="105" status="PASS">
+=======
+  <suite started-at="2020-11-26T14:58:05Z" name="Default suite" finished-at="2020-11-26T14:58:11Z" duration-ms="6235">
+    <groups>
+    </groups>
+    <test started-at="2020-11-26T14:58:05Z" name="Default test" finished-at="2020-11-26T14:58:11Z" duration-ms="6235">
+      <class name="testCases.FloatingMenu_Scroll_12">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.FloatingMenu_Scroll_12@38afe297]" started-at="2020-11-26T09:58:05Z" name="beforeClass" finished-at="2020-11-26T09:58:07Z" duration-ms="1500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.FloatingMenu_Scroll_12@38afe297]" started-at="2020-11-26T09:58:07Z" name="beforeMethod" finished-at="2020-11-26T09:58:07Z" duration-ms="410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="floatingMenu_12()[pri:0, instance:testCases.FloatingMenu_Scroll_12@38afe297]" started-at="2020-11-26T09:58:07Z" name="floatingMenu_12" finished-at="2020-11-26T09:58:11Z" duration-ms="4202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatingMenu_12 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.FloatingMenu_Scroll_12@38afe297]" started-at="2020-11-26T09:58:11Z" name="afterClass" finished-at="2020-11-26T09:58:11Z" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- testCases.FileUpload_11 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.FloatingMenu_Scroll_12@38afe297]" started-at="2020-11-26T09:58:11Z" name="afterMethod" finished-at="2020-11-26T09:58:11Z" duration-ms="0" status="PASS">
+>>>>>>> FloatMenuScrool
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.FloatingMenu_Scroll_12 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
