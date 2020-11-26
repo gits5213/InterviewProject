@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-26T19:07:32Z" name="Default suite" finished-at="2020-11-26T19:07:44Z" duration-ms="11791">
+  <suite started-at="2020-11-26T19:29:23Z" name="Default suite" finished-at="2020-11-26T19:29:28Z" duration-ms="4795">
     <groups>
     </groups>
-    <test started-at="2020-11-26T19:07:32Z" name="Default test" finished-at="2020-11-26T19:07:44Z" duration-ms="11791">
-      <class name="testCases.MouseHover_14">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.MouseHover_14@2df3b89c]" started-at="2020-11-26T14:07:32Z" name="beforeClass" finished-at="2020-11-26T14:07:34Z" duration-ms="1666" status="PASS">
+    <test started-at="2020-11-26T19:29:23Z" name="Default test" finished-at="2020-11-26T19:29:28Z" duration-ms="4795">
+      <class name="testCases.Dropdown_6">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Dropdown_6@2df3b89c]" started-at="2020-11-26T14:29:23Z" name="beforeClass" finished-at="2020-11-26T14:29:24Z" duration-ms="1564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.MouseHover_14@2df3b89c]" started-at="2020-11-26T14:07:34Z" name="beforeMethod" finished-at="2020-11-26T14:07:34Z" duration-ms="413" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Dropdown_6@2df3b89c]" started-at="2020-11-26T14:29:24Z" name="beforeMethod" finished-at="2020-11-26T14:29:26Z" duration-ms="1750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="mouseHover_14()[pri:0, instance:testCases.MouseHover_14@2df3b89c]" started-at="2020-11-26T14:07:34Z" name="mouseHover_14" finished-at="2020-11-26T14:07:44Z" duration-ms="9567" status="PASS">
+        <test-method signature="dropdown()[pri:0, instance:testCases.Dropdown_6@2df3b89c]" started-at="2020-11-26T14:29:26Z" name="dropdown" finished-at="2020-11-26T14:29:27Z" duration-ms="1352" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mouseHover_14 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.MouseHover_14@2df3b89c]" started-at="2020-11-26T14:07:44Z" name="afterMethod" finished-at="2020-11-26T14:07:44Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.MouseHover_14@2df3b89c]" started-at="2020-11-26T14:07:44Z" name="afterClass" finished-at="2020-11-26T14:07:44Z" duration-ms="132" status="PASS">
+        </test-method> <!-- dropdown -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Dropdown_6@2df3b89c]" started-at="2020-11-26T14:29:27Z" name="afterClass" finished-at="2020-11-26T14:29:28Z" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- testCases.MouseHover_14 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Dropdown_6@2df3b89c]" started-at="2020-11-26T14:29:27Z" name="afterMethod" finished-at="2020-11-26T14:29:27Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.Dropdown_6 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
