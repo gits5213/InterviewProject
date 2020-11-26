@@ -13,7 +13,7 @@ public class FileDownload_10 extends BaseTest{
 		FileDownloadPage fl = new FileDownloadPage(driver);
 		driver.get(Utils.BASE_URLS + "/download");
 		sleepTest(1000);
-		
+		//https://github.com/uma5958/TestNG_SwtestAcademy/tree/master/src/test/java/com
 		//https://github.com/swtestacademy/SeleniumDownloadFile/blob/master/src/main/java/Demo.java
 		fl.getTextDownload().click();
 		sleepTest(2000);
