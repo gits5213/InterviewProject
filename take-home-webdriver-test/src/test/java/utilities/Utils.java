@@ -22,6 +22,9 @@ public class Utils {
 	public static final String HELLO_WORLD_TEXT = "Hello World!";
 	public static final String TEXT_AREA_TEXT = "I switched IFrame Your content goes here.";
 	public static final String I_SWITCHED_IFRAME = "I switched IFrame ";
+	public static final String HOVER_1_TEXT = "name: user1";
+	public static final String HOVER_2_TEXT = "name: user2";
+	public static final String HOVER_3_TEXT = "name: user3";
 	
 	
 
