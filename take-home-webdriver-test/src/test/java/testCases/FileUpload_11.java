@@ -22,18 +22,20 @@ public class FileUpload_11 extends BaseTest {
 		String imageDir = baseDir + "/src/test/java/resource/logo.png";
 		System.out.println(imageDir);
 		
-		//FileUploadingPage fl = new FileUploadingPage(driver);
-		driver.get("http://the-internet.herokuapp.com/upload");
+		FileUploadingPage fl = new FileUploadingPage(driver);
+		driver.get(Utils.BASE_URLS + "/upload");
 		sleepTest(5000);
-//		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
-		driver.findElement(By.cssSelector("#file-submit")).click();
-		//fl.getChoseFile().click();
+		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver,60);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#file-upload")));
+		fl.getChoseFile().click();
+		sleepTest(2000);
+		uploadFileWithRobot(imageDir);
+		sleepTest(2000);
+		fl.getUploadFile().click();
+		sleepTest(2000);
+		Assert.assertTrue(wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#uploaded-files"))).getText().equals("logo.png"));
 		sleepTest(5000);
-//		uploadFileWithRobot(imageDir);
-//		sleepTest(1000);
-//		fl.getUploadFile().click();
-//		Assert.assertTrue(wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#uploaded-files"))).getText().equals("logo.png"));
-//		sleepTest(5000);
 	
 	}
 	
