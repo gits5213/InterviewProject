@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-27T12:15:34Z" name="Default suite" finished-at="2020-11-27T12:15:42Z" duration-ms="7609">
+  <suite started-at="2020-11-27T22:48:33Z" name="Default suite" finished-at="2020-11-27T22:48:38Z" duration-ms="5614">
     <groups>
     </groups>
-    <test started-at="2020-11-27T12:15:34Z" name="Default test" finished-at="2020-11-27T12:15:42Z" duration-ms="7609">
-      <class name="testCases.OpenNewTab_17">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.OpenNewTab_17@23348b5d]" started-at="2020-11-27T07:15:34Z" name="beforeClass" finished-at="2020-11-27T07:15:36Z" duration-ms="1669" status="PASS">
+    <test started-at="2020-11-27T22:48:33Z" name="Default test" finished-at="2020-11-27T22:48:38Z" duration-ms="5614">
+      <class name="testCases.NotificaitonMessage_18">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.NotificaitonMessage_18@23348b5d]" started-at="2020-11-27T17:48:33Z" name="beforeClass" finished-at="2020-11-27T17:48:34Z" duration-ms="1684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.OpenNewTab_17@23348b5d]" started-at="2020-11-27T07:15:36Z" name="beforeMethod" finished-at="2020-11-27T07:15:36Z" duration-ms="431" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.NotificaitonMessage_18@23348b5d]" started-at="2020-11-27T17:48:34Z" name="beforeMethod" finished-at="2020-11-27T17:48:35Z" duration-ms="440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="openNewTab_17()[pri:0, instance:testCases.OpenNewTab_17@23348b5d]" started-at="2020-11-27T07:15:36Z" name="openNewTab_17" finished-at="2020-11-27T07:15:42Z" duration-ms="5391" status="PASS">
+        <test-method signature="notificaitonMessage_18()[pri:0, instance:testCases.NotificaitonMessage_18@23348b5d]" started-at="2020-11-27T17:48:35Z" name="notificaitonMessage_18" finished-at="2020-11-27T17:48:38Z" duration-ms="3377" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openNewTab_17 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.OpenNewTab_17@23348b5d]" started-at="2020-11-27T07:15:42Z" name="afterMethod" finished-at="2020-11-27T07:15:42Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.OpenNewTab_17@23348b5d]" started-at="2020-11-27T07:15:42Z" name="afterClass" finished-at="2020-11-27T07:15:42Z" duration-ms="106" status="PASS">
+        </test-method> <!-- notificaitonMessage_18 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.NotificaitonMessage_18@23348b5d]" started-at="2020-11-27T17:48:38Z" name="afterClass" finished-at="2020-11-27T17:48:38Z" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- testCases.OpenNewTab_17 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.NotificaitonMessage_18@23348b5d]" started-at="2020-11-27T17:48:38Z" name="afterMethod" finished-at="2020-11-27T17:48:38Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.NotificaitonMessage_18 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

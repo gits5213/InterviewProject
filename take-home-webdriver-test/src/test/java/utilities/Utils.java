@@ -25,6 +25,8 @@ public class Utils {
 	public static final String HOVER_1_TEXT = "name: user1";
 	public static final String HOVER_2_TEXT = "name: user2";
 	public static final String HOVER_3_TEXT = "name: user3";
+	public static final String ACTION_SUCCESSFUL = "Action successful\n" + "×";
+	public static final String ACTION_UNSUCCESSFUL = "Action unsuccesful, please try again\n" + "×";
 	
 	
 
