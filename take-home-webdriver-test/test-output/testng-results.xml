@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-26T19:29:23Z" name="Default suite" finished-at="2020-11-26T19:29:28Z" duration-ms="4795">
+  <suite started-at="2020-11-27T01:44:38Z" name="Default suite" finished-at="2020-11-27T01:44:55Z" duration-ms="16727">
     <groups>
     </groups>
-    <test started-at="2020-11-26T19:29:23Z" name="Default test" finished-at="2020-11-26T19:29:28Z" duration-ms="4795">
-      <class name="testCases.Dropdown_6">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Dropdown_6@2df3b89c]" started-at="2020-11-26T14:29:23Z" name="beforeClass" finished-at="2020-11-26T14:29:24Z" duration-ms="1564" status="PASS">
+    <test started-at="2020-11-27T01:44:38Z" name="Default test" finished-at="2020-11-27T01:44:55Z" duration-ms="16727">
+      <class name="testCases.JavascriptAlert_15">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.JavascriptAlert_15@2df3b89c]" started-at="2020-11-26T20:44:38Z" name="beforeClass" finished-at="2020-11-26T20:44:40Z" duration-ms="1669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Dropdown_6@2df3b89c]" started-at="2020-11-26T14:29:24Z" name="beforeMethod" finished-at="2020-11-26T14:29:26Z" duration-ms="1750" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.JavascriptAlert_15@2df3b89c]" started-at="2020-11-26T20:44:40Z" name="beforeMethod" finished-at="2020-11-26T20:44:40Z" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="dropdown()[pri:0, instance:testCases.Dropdown_6@2df3b89c]" started-at="2020-11-26T14:29:26Z" name="dropdown" finished-at="2020-11-26T14:29:27Z" duration-ms="1352" status="PASS">
+        <test-method signature="javascriptAlert_15()[pri:0, instance:testCases.JavascriptAlert_15@2df3b89c]" started-at="2020-11-26T20:44:40Z" name="javascriptAlert_15" finished-at="2020-11-26T20:44:55Z" duration-ms="14497" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dropdown -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Dropdown_6@2df3b89c]" started-at="2020-11-26T14:29:27Z" name="afterClass" finished-at="2020-11-26T14:29:28Z" duration-ms="115" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Dropdown_6@2df3b89c]" started-at="2020-11-26T14:29:27Z" name="afterMethod" finished-at="2020-11-26T14:29:27Z" duration-ms="0" status="PASS">
+        </test-method> <!-- javascriptAlert_15 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.JavascriptAlert_15@2df3b89c]" started-at="2020-11-26T20:44:55Z" name="afterMethod" finished-at="2020-11-26T20:44:55Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.Dropdown_6 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.JavascriptAlert_15@2df3b89c]" started-at="2020-11-26T20:44:55Z" name="afterClass" finished-at="2020-11-26T20:44:55Z" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.JavascriptAlert_15 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
