@@ -3,15 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="testCases.JavascriptAlert_15">
+      <class name="testCases.JavascriptError_16">
         <methods>
-          <include name="beforeMethod"/>
+          <include name="javascriptError_16"/>
           <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="mouseHover_14"/>
-          <include name="afterClass"/>
         </methods>
-      </class> <!-- testCases.JavascriptAlert_15 -->
+      </class> <!-- testCases.JavascriptError_16 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

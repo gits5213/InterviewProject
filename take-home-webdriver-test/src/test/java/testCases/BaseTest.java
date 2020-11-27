@@ -13,13 +13,18 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 import org.testng.annotations.AfterClass;
 
 public class BaseTest {
@@ -34,7 +39,6 @@ public class BaseTest {
 		System.setProperty(Utils.WEB_DRIVER_PATH, browserDriver);
 		
 		//Only for Download file 
-
 		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
         chromePrefs.put("profile.default_content_settings.popups", 0);
         chromePrefs.put("download.default_directory", System.getProperty("user.dir"));
@@ -42,7 +46,6 @@ public class BaseTest {
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("prefs", chromePrefs);
 		//
-       
 		driver = new ChromeDriver(options); //options
 	}
 	
@@ -64,13 +67,13 @@ public class BaseTest {
 		driver.quit();
 		
 	}
-	
+	//Global Sleep
 	public static void sleepTest(long sleeptime) {
 		try {Thread.sleep(sleeptime);
 		}catch(Exception e) {
 			}
 		}
-	//For Upload 
+	//Global For Upload 
 	public void uploadFileWithRobot (String imagePath) {
         StringSelection stringSelection = new StringSelection(imagePath);
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -96,10 +99,20 @@ public class BaseTest {
         robot.keyRelease(KeyEvent.VK_ENTER);
     }
 	
+	//Global switchIframe
 	public int switchIframe(int number) {
 		driver.switchTo().frame(number); 
 		return number;
 		
+	}
+	
+	//https://stackoverflow.com/questions/51176912/capture-console-error-using-javascriptexecutor-class-in-selenium
+	//Global JavaScript application console error message
+	public void javascriptConsoleError() {
+		LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+		for (LogEntry entry : logEntries) {
+		    System.out.println(new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage());
+		}
 	}
 	
 
