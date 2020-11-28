@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-27T22:48:33Z" name="Default suite" finished-at="2020-11-27T22:48:38Z" duration-ms="5614">
+  <suite started-at="2020-11-28T01:31:40Z" name="Default suite" finished-at="2020-11-28T01:31:47Z" duration-ms="7194">
     <groups>
     </groups>
-    <test started-at="2020-11-27T22:48:33Z" name="Default test" finished-at="2020-11-27T22:48:38Z" duration-ms="5614">
-      <class name="testCases.NotificaitonMessage_18">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.NotificaitonMessage_18@23348b5d]" started-at="2020-11-27T17:48:33Z" name="beforeClass" finished-at="2020-11-27T17:48:34Z" duration-ms="1684" status="PASS">
+    <test started-at="2020-11-28T01:31:40Z" name="Default test" finished-at="2020-11-28T01:31:47Z" duration-ms="7194">
+      <class name="testCases.DataTable">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.DataTable@23348b5d]" started-at="2020-11-27T20:31:40Z" name="beforeClass" finished-at="2020-11-27T20:31:41Z" duration-ms="1616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.NotificaitonMessage_18@23348b5d]" started-at="2020-11-27T17:48:34Z" name="beforeMethod" finished-at="2020-11-27T17:48:35Z" duration-ms="440" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.DataTable@23348b5d]" started-at="2020-11-27T20:31:41Z" name="beforeMethod" finished-at="2020-11-27T20:31:42Z" duration-ms="584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="notificaitonMessage_18()[pri:0, instance:testCases.NotificaitonMessage_18@23348b5d]" started-at="2020-11-27T17:48:35Z" name="notificaitonMessage_18" finished-at="2020-11-27T17:48:38Z" duration-ms="3377" status="PASS">
+        <test-method signature="dataTable()[pri:0, instance:testCases.DataTable@23348b5d]" started-at="2020-11-27T20:31:42Z" name="dataTable" finished-at="2020-11-27T20:31:47Z" duration-ms="4887" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- notificaitonMessage_18 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.NotificaitonMessage_18@23348b5d]" started-at="2020-11-27T17:48:38Z" name="afterClass" finished-at="2020-11-27T17:48:38Z" duration-ms="102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.NotificaitonMessage_18@23348b5d]" started-at="2020-11-27T17:48:38Z" name="afterMethod" finished-at="2020-11-27T17:48:38Z" duration-ms="0" status="PASS">
+        </test-method> <!-- dataTable -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.DataTable@23348b5d]" started-at="2020-11-27T20:31:47Z" name="afterMethod" finished-at="2020-11-27T20:31:47Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.NotificaitonMessage_18 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.DataTable@23348b5d]" started-at="2020-11-27T20:31:47Z" name="afterClass" finished-at="2020-11-27T20:31:47Z" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.DataTable -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
