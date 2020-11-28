@@ -1,18 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="Suite">
   <test name="TestSuite">
     <classes>
-      <class name="testCases.LoginSuccess"/>
-      <class name="testCases.LoginFailure"/>
-      <class name="testCases.Dropdown"/>
-      <class name="testCases.Drag_and_drop"/>
-      <class name="testCases.CheckBoxes"/>
-      <class name="testCases.Context_menu"/>
-      <class name="testCases.Dynamic_content"/>
-      <class name="testCases.Dynamic_controls"/>
+      <class name="testCases.LoginSuccess_1"/>
+      <class name="testCases.LoginFailure_2"/>
+      <class name="testCases.CheckBoxes_3"/>
+      <class name="testCases.Context_menu_4"/>
+      <class name="testCases.Drag_and_drop_5"/>
+      <class name="testCases.Dropdown_6"/>
+      <class name="testCases.Dynamic_content_7"/>
+      <class name="testCases.Dynamic_controls_8"/>
       <class name="testCases.DynamicLoading_9"/>
       <class name="testCases.FileDownload_10"/>
       <class name="testCases.FileUpload_11"/>
+      <class name="testCases.FloatingMenu_Scroll_12"/>
+      <class name="testCases.Iframe_13"/>
+      <class name="testCases.MouseHover_14"/>
+      <class name="testCases.JavascriptAlert_15"/>
+      <class name="testCases.javascriptError_16"/>
+      <class name="testCases.OpenNewTab_17"/>
+      <class name="testCases.WebTable_18"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

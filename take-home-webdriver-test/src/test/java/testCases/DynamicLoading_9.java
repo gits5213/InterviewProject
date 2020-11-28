@@ -15,6 +15,10 @@ public class DynamicLoading_9 extends BaseTest {
 		DynamicLoadingPage dl = new DynamicLoadingPage(driver);
 		driver.get(Utils.BASE_URLS + "/dynamic_loading/2");
 		sleepTest(1000);
+		
+		//Test clicks the start button and uses explicit wait.
+		//Test asserts that “Hello World!” text is displayed.
+		
 		dl.getStartBtn().click();
 		WebDriverWait wait = new WebDriverWait(driver,60);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"finish\"]/h4")));

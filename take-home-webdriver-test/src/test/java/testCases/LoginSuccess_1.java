@@ -13,6 +13,11 @@ public class LoginSuccess_1 extends BaseTest {
 		
 		LoginPage sp = new LoginPage(driver);
 		driver.get(Utils.BASE_URLS + "/login");
+		
+		//Page Object Model for the login page should be provided.
+		//Test is able to login successfully.
+		//Test uses an assertion to make sure User has logged in.
+		
 		sp.getUserName().sendKeys(Utils.USER_NAME);
 		sp.getPassword().sendKeys(Utils.CORRECT_PASSWORD);
 		sp.getSignInBtn().click();

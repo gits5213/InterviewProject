@@ -16,12 +16,16 @@ public class FileUpload_11 extends BaseTest {
 	public void fileUpload_11(){
 		
 		String baseDir = System.getProperty("user.dir");
-		String imageDir = baseDir + "/src/test/java/resource/logo.png";
+		String imageDir = baseDir + "/resource/logo.png";
 		System.out.println(imageDir);
 		
 		FileUploadingPage fl = new FileUploadingPage(driver);
 		driver.get(Utils.BASE_URLS + "/upload");
-		sleepTest(5000);
+		sleepTest(2000);
+		
+		//Test uses Upload Button or Drag and Drop to upload a file.
+		//Test asserts that the file is uploaded.
+		
 		WebDriverWait wait = new WebDriverWait(driver,60);
 		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#file-upload")));
 		fl.getChoseFile().click();

@@ -12,6 +12,11 @@ public class LoginFailure_2 extends BaseTest {
 		
 		LoginPage lp = new LoginPage(driver);
 		driver.get(Utils.BASE_URLS + "/login");
+		
+		//Page Object Model for the login page should be used.
+		//Test is not able to login with wrong credentials.
+		//Test uses assertions to check Login failed for incorrect user and password.
+		
 		lp.getUserName().sendKeys(Utils.USER_NAME);
 		lp.getPassword().sendKeys(Utils.WRONG_PASSWORD);
 		lp.getSignInBtn().click();

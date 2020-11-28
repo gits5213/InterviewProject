@@ -1,7 +1,6 @@
 package testCases;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
-import testPages.Dynamic_contentPage;
 import utilities.Utils;
 
 public class Dynamic_content_7 extends BaseTest {
@@ -13,8 +12,12 @@ public class Dynamic_content_7 extends BaseTest {
 	@Test
 	public void dynamic_content(){
 		
-		Dynamic_contentPage dc = new Dynamic_contentPage(driver);
+		//Dynamic_contentPage dc = new Dynamic_contentPage(driver);
 		driver.get(Utils.BASE_URLS + "/dynamic_content");
+		
+		//Test refreshes the page a couple of times.
+		//Test asserts that the content changes on each refresh.
+		
 		driver.navigate().refresh();
 		sleepTest(1000);
 		driver.navigate().refresh();

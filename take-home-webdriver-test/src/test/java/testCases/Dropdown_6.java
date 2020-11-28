@@ -1,9 +1,7 @@
 package testCases;
 
 import static org.testng.Assert.assertEquals;
-
 import java.util.List;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
@@ -18,6 +16,9 @@ public class Dropdown_6 extends BaseTest {
 		DropdownPage dp = new DropdownPage(driver);
 		driver.get(Utils.BASE_URLS + "/dropdown");
 		sleepTest(1000);
+		
+		//Test selects Option 1 and Option 2 from the drop down menu.
+		//Test asserts Option 1 and Option 2 are selected.
 		
 		Select select = new Select(dp.getDropDown());
 		

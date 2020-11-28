@@ -3,22 +3,16 @@ package testCases;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import utilities.Utils;
-
 import org.testng.annotations.BeforeClass;
-
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
-import java.io.File;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -29,7 +23,6 @@ import org.testng.annotations.AfterClass;
 
 public class BaseTest {
 	//https://github.com/swtestacademy?tab=repositories
-	
 	public WebDriver driver;
 	
 	@BeforeClass
@@ -114,6 +107,4 @@ public class BaseTest {
 		    System.out.println(new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage());
 		}
 	}
-	
-
 }

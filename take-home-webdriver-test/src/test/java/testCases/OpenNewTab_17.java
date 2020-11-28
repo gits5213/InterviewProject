@@ -1,12 +1,9 @@
 package testCases;
 
 import static org.testng.Assert.assertEquals;
-
 import java.util.Iterator;
 import java.util.Set;
-
 import org.testng.annotations.Test;
-
 import testPages.OpenNewTabPage;
 import utilities.Utils;
 
@@ -66,5 +63,4 @@ public class OpenNewTab_17 extends BaseTest{
 		assertEquals(mainWindowTitle, "The Internet");
 		sleepTest(2000);	
 	}
-
 }

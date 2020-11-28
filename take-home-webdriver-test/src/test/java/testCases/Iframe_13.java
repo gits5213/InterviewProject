@@ -21,6 +21,9 @@ public class Iframe_13 extends BaseTest{
 		ip.getPopUp().click();
 		sleepTest(1000);
 		
+		//Test switches to Iframe and types some text.
+	    //Test asserts that the typed text is as expected.
+		
 		//Finding all iframe tags on a web page
 		List<WebElement> elements = driver.findElements(By.tagName("iframe"));
 		int numberOfTags = elements.size();

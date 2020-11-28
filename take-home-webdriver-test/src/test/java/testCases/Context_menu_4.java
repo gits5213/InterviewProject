@@ -17,6 +17,9 @@ public class Context_menu_4 extends BaseTest {
 		context_menuPage cm = new context_menuPage(driver);
 		driver.get(Utils.BASE_URLS + "/context_menu");
 		
+		//Test right clicks on the context menu.
+		//Test asserts the alert menu text.
+		
 		Actions action = new Actions(driver);
 		WebElement box = cm.getContextMenuBox();
 		action.contextClick(box).perform();

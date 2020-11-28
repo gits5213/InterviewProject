@@ -15,6 +15,9 @@ public class FloatingMenu_Scroll_12 extends BaseTest{
 	driver.get(Utils.BASE_URLS + "/floating_menu");
 	sleepTest(2000);
 	
+	//Test scrolls the page.
+    //Test asserts that the floating menu is still displayed.
+	
 	/*
 	//to perform Scroll on application using Selenium
 	JavascriptExecutor js = (JavascriptExecutor) driver;

@@ -2,15 +2,14 @@ package testCases;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import testPages.DataTablePage;
 import utilities.Utils;
 
-public class DataTable extends BaseTest {
+public class WebTable_18 extends BaseTest {
 	
 	@Test
 	public void dataTable(){
 		
-		DataTablePage dt = new DataTablePage(driver);
+		//DataTablePage dt = new DataTablePage(driver);
 		driver.get(Utils.BASE_URLS + "/tables");
 		sleepTest(1000);
 		
@@ -53,7 +52,5 @@ public class DataTable extends BaseTest {
 			}
 			System.out.println("=========Printing eatch Row========="); // print all the values in the Seperate line
 		}
-		
 	}
-
 }

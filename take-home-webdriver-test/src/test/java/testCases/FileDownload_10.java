@@ -15,6 +15,10 @@ public class FileDownload_10 extends BaseTest{
 		sleepTest(1000);
 		//https://github.com/uma5958/TestNG_SwtestAcademy/tree/master/src/test/java/com
 		//https://github.com/swtestacademy/SeleniumDownloadFile/blob/master/src/main/java/Demo.java
+		
+		//Test clicks on the file.
+		//Test asserts that the file is downloaded.
+		
 		fl.getTextDownload().click();
 		sleepTest(2000);
 		File folder = new File(System.getProperty("user.dir"));

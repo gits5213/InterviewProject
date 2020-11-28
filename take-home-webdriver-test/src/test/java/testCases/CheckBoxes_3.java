@@ -12,6 +12,10 @@ public class CheckBoxes_3 extends BaseTest {
 		
 		CheckboxesPage cb = new CheckboxesPage(driver);
 		driver.get(Utils.BASE_URLS + "/checkboxes");
+		
+		//Test checks and unchecks checkboxes.
+		//Test uses assertions to make sure boxes were properly checked and unchecked
+		
 		driver.manage().deleteAllCookies();
 		sleepTest(1000);
 		boolean check = cb.getFirstCheckbox().isSelected();

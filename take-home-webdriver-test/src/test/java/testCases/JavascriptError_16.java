@@ -13,6 +13,7 @@ public class JavascriptError_16 extends BaseTest{
 		
 		//Test finds the JavaScript error on the page.
 	    //Test asserts that the page contains error: Cannot read property
+		
 		javascriptConsoleError();
 	}
 }

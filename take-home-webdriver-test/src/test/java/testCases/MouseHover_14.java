@@ -19,6 +19,9 @@ public class MouseHover_14 extends BaseTest{
 		driver.get(Utils.BASE_URLS + "/hovers");
 		sleepTest(1000);
 		
+		//Test does a mouse hover on each image.
+	    //Test asserts that additional information is displayed for each image.
+		
 		Actions act = new Actions(driver);
 
 		// First user
