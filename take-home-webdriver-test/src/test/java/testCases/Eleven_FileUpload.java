@@ -19,12 +19,8 @@ public class Eleven_FileUpload extends BaseTest {
 		String imageDir = baseDir + "/resource/logo.png";
 		System.out.println(imageDir);
 		
-		//Sendkeys
-		//https://www.browserstack.com/guide/file-upload-in-selenium
-		//or
-		// 3 Technich
-		//https://www.techbeamers.com/handle-file-upload-selenium-webdriver/
-		
+	
+		//https://dzone.com/articles/how-to-download-amp-upload-files-using-selenium-wi
 		FileUploadingPage fl = new FileUploadingPage(driver);
 		driver.get(Utils.BASE_URLS + "/upload");
 		sleepTest(2000);
@@ -34,12 +30,12 @@ public class Eleven_FileUpload extends BaseTest {
 		
 		WebDriverWait wait = new WebDriverWait(driver,60);
 		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#file-upload")));
-		fl.getChoseFile().click();
-		uploadFileWithRobot(imageDir);
+		fl.getChoseFile().sendKeys(imageDir);
+		sleepTest(1000);
 		fl.getUploadFile().click();
-		sleepTest(5000);
+		sleepTest(1000);
 		Assert.assertTrue(wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#uploaded-files"))).getText().equals("logo.png"));
-		sleepTest(5000);
+		sleepTest(1000);
 
 	}
 }
