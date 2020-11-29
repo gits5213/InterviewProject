@@ -1,26 +1,28 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Suite">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="IntegratedFuncational" verbose="1" >
   <test name="TestSuite">
     <classes>
-      <class name="testCases.LoginSuccess_1"/>
-      <class name="testCases.LoginFailure_2"/>
-      <class name="testCases.CheckBoxes_3"/>
-      <class name="testCases.Context_menu_4"/>
-      <class name="testCases.Drag_and_drop_5"/>
-      <class name="testCases.Dropdown_6"/>
-      <class name="testCases.Dynamic_content_7"/>
-      <class name="testCases.Dynamic_controls_8"/>
-      <class name="testCases.DynamicLoading_9"/>
-      <class name="testCases.FileDownload_10"/>
-      <class name="testCases.FileUpload_11"/>
-      <class name="testCases.FloatingMenu_Scroll_12"/>
-      <class name="testCases.Iframe_13"/>
-      <class name="testCases.MouseHover_14"/>
-      <class name="testCases.JavascriptAlert_15"/>
-      <class name="testCases.javascriptError_16"/>
-      <class name="testCases.OpenNewTab_17"/>
-      <class name="testCases.WebTable_18"/>
+      <class name="testCases.One_LoginSuccess"/>
+      <class name="testCases.Two_LoginFailure"/>
+      <class name="testCases.Three_CheckBoxes"/>
+      <class name="testCases.Four_Context_menu"/>
+      <class name="testCases.Five_Drag_and_drop"/>
+      <class name="testCases.Six_Dropdown"/>
+      <class name="testCases.Seven_Dynamic_content"/>
+      <class name="testCases.Eight_Dynamic_controls"/>
+      <class name="testCases.Nine_DynamicLoading"/>
+      <class name="testCases.Ten_FileDownload"/>
+      <class name="testCases.Eleven_FileUpload"/>
+      <class name="testCases.Twelve_FloatingMenu_Scroll"/>
+      <class name="testCases.Thirteen_Iframe"/>
+      <class name="testCases.Fourteen_MouseHover"/>
+      <class name="testCases.Fifteen_JavascriptAlert"/>
+      <class name="testCases.Sixteen_JavascriptError"/>
+      <class name="testCases.Seventeen_OpenNewTab"/>
+      <class name="testCases.Eighteen_NotificaitonMessage"/>
+      <class name="testCases.Nineteen_WebTable"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

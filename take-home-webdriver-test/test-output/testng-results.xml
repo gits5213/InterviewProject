@@ -1,33 +1,494 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="19" passed="18" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-28T01:40:44Z" name="Default suite" finished-at="2020-11-28T01:40:51Z" duration-ms="6784">
+  <suite started-at="2020-11-29T00:20:36Z" name="IntegratedFuncational" finished-at="2020-11-29T00:22:14Z" duration-ms="98122">
     <groups>
     </groups>
-    <test started-at="2020-11-28T01:40:44Z" name="Default test" finished-at="2020-11-28T01:40:51Z" duration-ms="6784">
-      <class name="testCases.WebTable_18">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.WebTable_18@23348b5d]" started-at="2020-11-27T20:40:44Z" name="beforeClass" finished-at="2020-11-27T20:40:46Z" duration-ms="1452" status="PASS">
+    <test started-at="2020-11-29T00:20:36Z" name="TestSuite" finished-at="2020-11-29T00:22:14Z" duration-ms="98122">
+      <class name="testCases.Eleven_FileUpload">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Eleven_FileUpload@6a2f6f80]" started-at="2020-11-28T19:21:13Z" name="beforeClass" finished-at="2020-11-28T19:21:14Z" duration-ms="954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.WebTable_18@23348b5d]" started-at="2020-11-27T20:40:46Z" name="beforeMethod" finished-at="2020-11-27T20:40:46Z" duration-ms="464" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Eleven_FileUpload@6a2f6f80]" started-at="2020-11-28T19:21:14Z" name="beforeMethod" finished-at="2020-11-28T19:21:14Z" duration-ms="406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="dataTable()[pri:0, instance:testCases.WebTable_18@23348b5d]" started-at="2020-11-27T20:40:46Z" name="dataTable" finished-at="2020-11-27T20:40:51Z" duration-ms="4748" status="PASS">
+        <test-method signature="fileUpload_11()[pri:0, instance:testCases.Eleven_FileUpload@6a2f6f80]" started-at="2020-11-28T19:21:14Z" name="fileUpload_11" finished-at="2020-11-28T19:21:17Z" duration-ms="2172" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[invalid argument
+  (Session info: chrome=86.0.4240.198)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'mds-MacBook-Pro.local', ip: 'fe80:0:0:0:480:cea1:d91e:f406%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/jw/8yfkq0rd1vb...}, goog:chromeOptions: {debuggerAddress: localhost:52040}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4d9daa89e60dcf98ddc917f9ee8a2b05]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=86.0.4240.198)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'mds-MacBook-Pro.local', ip: 'fe80:0:0:0:480:cea1:d91e:f406%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/jw/8yfkq0rd1vb...}, goog:chromeOptions: {debuggerAddress: localhost:52040}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4d9daa89e60dcf98ddc917f9ee8a2b05
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at testCases.Eleven_FileUpload.fileUpload_11(Eleven_FileUpload.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataTable -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.WebTable_18@23348b5d]" started-at="2020-11-27T20:40:51Z" name="afterMethod" finished-at="2020-11-27T20:40:51Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.WebTable_18@23348b5d]" started-at="2020-11-27T20:40:51Z" name="afterClass" finished-at="2020-11-27T20:40:51Z" duration-ms="108" status="PASS">
+        </test-method> <!-- fileUpload_11 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Eleven_FileUpload@6a2f6f80]" started-at="2020-11-28T19:21:17Z" name="afterClass" finished-at="2020-11-28T19:21:17Z" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- testCases.WebTable_18 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Eleven_FileUpload@6a2f6f80]" started-at="2020-11-28T19:21:17Z" name="afterMethod" finished-at="2020-11-28T19:21:17Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.Eleven_FileUpload -->
+      <class name="testCases.Four_Context_menu">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Four_Context_menu@4961f6af]" started-at="2020-11-28T19:20:45Z" name="beforeClass" finished-at="2020-11-28T19:20:46Z" duration-ms="877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Four_Context_menu@4961f6af]" started-at="2020-11-28T19:20:46Z" name="beforeMethod" finished-at="2020-11-28T19:20:47Z" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="context_menu()[pri:0, instance:testCases.Four_Context_menu@4961f6af]" started-at="2020-11-28T19:20:47Z" name="context_menu" finished-at="2020-11-28T19:20:49Z" duration-ms="2262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- context_menu -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Four_Context_menu@4961f6af]" started-at="2020-11-28T19:20:49Z" name="afterMethod" finished-at="2020-11-28T19:20:49Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Four_Context_menu@4961f6af]" started-at="2020-11-28T19:20:49Z" name="afterClass" finished-at="2020-11-28T19:20:49Z" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Four_Context_menu -->
+      <class name="testCases.Fourteen_MouseHover">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Fourteen_MouseHover@291caca8]" started-at="2020-11-28T19:21:30Z" name="beforeClass" finished-at="2020-11-28T19:21:31Z" duration-ms="958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Fourteen_MouseHover@291caca8]" started-at="2020-11-28T19:21:31Z" name="beforeMethod" finished-at="2020-11-28T19:21:31Z" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="mouseHover_14()[pri:0, instance:testCases.Fourteen_MouseHover@291caca8]" started-at="2020-11-28T19:21:31Z" name="mouseHover_14" finished-at="2020-11-28T19:21:41Z" duration-ms="9545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHover_14 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Fourteen_MouseHover@291caca8]" started-at="2020-11-28T19:21:41Z" name="afterMethod" finished-at="2020-11-28T19:21:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Fourteen_MouseHover@291caca8]" started-at="2020-11-28T19:21:41Z" name="afterClass" finished-at="2020-11-28T19:21:41Z" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Fourteen_MouseHover -->
+      <class name="testCases.Seven_Dynamic_content">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Seven_Dynamic_content@33c911a1]" started-at="2020-11-28T19:20:56Z" name="beforeClass" finished-at="2020-11-28T19:20:57Z" duration-ms="903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Seven_Dynamic_content@33c911a1]" started-at="2020-11-28T19:20:57Z" name="beforeMethod" finished-at="2020-11-28T19:20:57Z" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="dynamic_content()[pri:0, instance:testCases.Seven_Dynamic_content@33c911a1]" started-at="2020-11-28T19:20:57Z" name="dynamic_content" finished-at="2020-11-28T19:20:59Z" duration-ms="2268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamic_content -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Seven_Dynamic_content@33c911a1]" started-at="2020-11-28T19:20:59Z" name="afterClass" finished-at="2020-11-28T19:20:59Z" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Seven_Dynamic_content@33c911a1]" started-at="2020-11-28T19:20:59Z" name="afterMethod" finished-at="2020-11-28T19:20:59Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.Seven_Dynamic_content -->
+      <class name="testCases.Eight_Dynamic_controls">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Eight_Dynamic_controls@75db5df9]" started-at="2020-11-28T19:20:59Z" name="beforeClass" finished-at="2020-11-28T19:21:00Z" duration-ms="892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Eight_Dynamic_controls@75db5df9]" started-at="2020-11-28T19:21:00Z" name="beforeMethod" finished-at="2020-11-28T19:21:01Z" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="userAbleToValidateErrorTextOnSignInpage()[pri:0, instance:testCases.Eight_Dynamic_controls@75db5df9]" started-at="2020-11-28T19:21:01Z" name="userAbleToValidateErrorTextOnSignInpage" finished-at="2020-11-28T19:21:01Z" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAbleToValidateErrorTextOnSignInpage -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Eight_Dynamic_controls@75db5df9]" started-at="2020-11-28T19:21:01Z" name="afterClass" finished-at="2020-11-28T19:21:01Z" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Eight_Dynamic_controls@75db5df9]" started-at="2020-11-28T19:21:01Z" name="afterMethod" finished-at="2020-11-28T19:21:01Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.Eight_Dynamic_controls -->
+      <class name="testCases.Twelve_FloatingMenu_Scroll">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Twelve_FloatingMenu_Scroll@45b4c3a9]" started-at="2020-11-28T19:21:17Z" name="beforeClass" finished-at="2020-11-28T19:21:18Z" duration-ms="897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Twelve_FloatingMenu_Scroll@45b4c3a9]" started-at="2020-11-28T19:21:18Z" name="beforeMethod" finished-at="2020-11-28T19:21:18Z" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="floatingMenu_12()[pri:0, instance:testCases.Twelve_FloatingMenu_Scroll@45b4c3a9]" started-at="2020-11-28T19:21:18Z" name="floatingMenu_12" finished-at="2020-11-28T19:21:21Z" duration-ms="3145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floatingMenu_12 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Twelve_FloatingMenu_Scroll@45b4c3a9]" started-at="2020-11-28T19:21:21Z" name="afterClass" finished-at="2020-11-28T19:21:21Z" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Twelve_FloatingMenu_Scroll@45b4c3a9]" started-at="2020-11-28T19:21:21Z" name="afterMethod" finished-at="2020-11-28T19:21:21Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.Twelve_FloatingMenu_Scroll -->
+      <class name="testCases.Seventeen_OpenNewTab">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Seventeen_OpenNewTab@8c3b9d]" started-at="2020-11-28T19:21:57Z" name="beforeClass" finished-at="2020-11-28T19:21:58Z" duration-ms="893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Seventeen_OpenNewTab@8c3b9d]" started-at="2020-11-28T19:21:58Z" name="beforeMethod" finished-at="2020-11-28T19:21:58Z" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="openNewTab_17()[pri:0, instance:testCases.Seventeen_OpenNewTab@8c3b9d]" started-at="2020-11-28T19:21:58Z" name="openNewTab_17" finished-at="2020-11-28T19:22:04Z" duration-ms="5252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openNewTab_17 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Seventeen_OpenNewTab@8c3b9d]" started-at="2020-11-28T19:22:04Z" name="afterClass" finished-at="2020-11-28T19:22:04Z" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Seventeen_OpenNewTab@8c3b9d]" started-at="2020-11-28T19:22:04Z" name="afterMethod" finished-at="2020-11-28T19:22:04Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.Seventeen_OpenNewTab -->
+      <class name="testCases.Nineteen_WebTable">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Nineteen_WebTable@f79e]" started-at="2020-11-28T19:22:08Z" name="beforeClass" finished-at="2020-11-28T19:22:09Z" duration-ms="794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Nineteen_WebTable@f79e]" started-at="2020-11-28T19:22:09Z" name="beforeMethod" finished-at="2020-11-28T19:22:10Z" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="dataTable()[pri:0, instance:testCases.Nineteen_WebTable@f79e]" started-at="2020-11-28T19:22:10Z" name="dataTable" finished-at="2020-11-28T19:22:14Z" duration-ms="4676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataTable -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Nineteen_WebTable@f79e]" started-at="2020-11-28T19:22:14Z" name="afterClass" finished-at="2020-11-28T19:22:14Z" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Nineteen_WebTable@f79e]" started-at="2020-11-28T19:22:14Z" name="afterMethod" finished-at="2020-11-28T19:22:14Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.Nineteen_WebTable -->
+      <class name="testCases.Ten_FileDownload">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Ten_FileDownload@1190200a]" started-at="2020-11-28T19:21:08Z" name="beforeClass" finished-at="2020-11-28T19:21:09Z" duration-ms="885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Ten_FileDownload@1190200a]" started-at="2020-11-28T19:21:09Z" name="beforeMethod" finished-at="2020-11-28T19:21:10Z" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="fileDownload_10()[pri:0, instance:testCases.Ten_FileDownload@1190200a]" started-at="2020-11-28T19:21:10Z" name="fileDownload_10" finished-at="2020-11-28T19:21:13Z" duration-ms="3179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileDownload_10 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Ten_FileDownload@1190200a]" started-at="2020-11-28T19:21:13Z" name="afterMethod" finished-at="2020-11-28T19:21:13Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Ten_FileDownload@1190200a]" started-at="2020-11-28T19:21:13Z" name="afterClass" finished-at="2020-11-28T19:21:13Z" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Ten_FileDownload -->
+      <class name="testCases.Three_CheckBoxes">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Three_CheckBoxes@394df057]" started-at="2020-11-28T19:20:41Z" name="beforeClass" finished-at="2020-11-28T19:20:42Z" duration-ms="954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Three_CheckBoxes@394df057]" started-at="2020-11-28T19:20:42Z" name="beforeMethod" finished-at="2020-11-28T19:20:42Z" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkBoxes()[pri:0, instance:testCases.Three_CheckBoxes@394df057]" started-at="2020-11-28T19:20:42Z" name="checkBoxes" finished-at="2020-11-28T19:20:45Z" duration-ms="3212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxes -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Three_CheckBoxes@394df057]" started-at="2020-11-28T19:20:45Z" name="afterMethod" finished-at="2020-11-28T19:20:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Three_CheckBoxes@394df057]" started-at="2020-11-28T19:20:45Z" name="afterClass" finished-at="2020-11-28T19:20:45Z" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Three_CheckBoxes -->
+      <class name="testCases.Six_Dropdown">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Six_Dropdown@65d09a04]" started-at="2020-11-28T19:20:53Z" name="beforeClass" finished-at="2020-11-28T19:20:54Z" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Six_Dropdown@65d09a04]" started-at="2020-11-28T19:20:54Z" name="beforeMethod" finished-at="2020-11-28T19:20:54Z" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="dropdown()[pri:0, instance:testCases.Six_Dropdown@65d09a04]" started-at="2020-11-28T19:20:54Z" name="dropdown" finished-at="2020-11-28T19:20:56Z" duration-ms="1309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdown -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Six_Dropdown@65d09a04]" started-at="2020-11-28T19:20:56Z" name="afterMethod" finished-at="2020-11-28T19:20:56Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Six_Dropdown@65d09a04]" started-at="2020-11-28T19:20:56Z" name="afterClass" finished-at="2020-11-28T19:20:56Z" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Six_Dropdown -->
+      <class name="testCases.Nine_DynamicLoading">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Nine_DynamicLoading@707194ba]" started-at="2020-11-28T19:21:01Z" name="beforeClass" finished-at="2020-11-28T19:21:02Z" duration-ms="877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Nine_DynamicLoading@707194ba]" started-at="2020-11-28T19:21:02Z" name="beforeMethod" finished-at="2020-11-28T19:21:02Z" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="dynamicLoading_9()[pri:0, instance:testCases.Nine_DynamicLoading@707194ba]" started-at="2020-11-28T19:21:02Z" name="dynamicLoading_9" finished-at="2020-11-28T19:21:08Z" duration-ms="6194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicLoading_9 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Nine_DynamicLoading@707194ba]" started-at="2020-11-28T19:21:08Z" name="afterMethod" finished-at="2020-11-28T19:21:08Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Nine_DynamicLoading@707194ba]" started-at="2020-11-28T19:21:08Z" name="afterClass" finished-at="2020-11-28T19:21:08Z" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Nine_DynamicLoading -->
+      <class name="testCases.One_LoginSuccess">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.One_LoginSuccess@58a9760d]" started-at="2020-11-28T19:20:36Z" name="beforeClass" finished-at="2020-11-28T19:20:38Z" duration-ms="1533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.One_LoginSuccess@58a9760d]" started-at="2020-11-28T19:20:38Z" name="beforeMethod" finished-at="2020-11-28T19:20:38Z" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="userAbleToValidateErrorTextOnSignInpage()[pri:0, instance:testCases.One_LoginSuccess@58a9760d]" started-at="2020-11-28T19:20:38Z" name="userAbleToValidateErrorTextOnSignInpage" finished-at="2020-11-28T19:20:39Z" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAbleToValidateErrorTextOnSignInpage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.One_LoginSuccess@58a9760d]" started-at="2020-11-28T19:20:39Z" name="afterMethod" finished-at="2020-11-28T19:20:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.One_LoginSuccess@58a9760d]" started-at="2020-11-28T19:20:39Z" name="afterClass" finished-at="2020-11-28T19:20:39Z" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.One_LoginSuccess -->
+      <class name="testCases.Two_LoginFailure">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Two_LoginFailure@71e9ddb4]" started-at="2020-11-28T19:20:39Z" name="beforeClass" finished-at="2020-11-28T19:20:40Z" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Two_LoginFailure@71e9ddb4]" started-at="2020-11-28T19:20:40Z" name="beforeMethod" finished-at="2020-11-28T19:20:40Z" duration-ms="404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="userAbleToValidateErrorTextOnSignInpage()[pri:0, instance:testCases.Two_LoginFailure@71e9ddb4]" started-at="2020-11-28T19:20:40Z" name="userAbleToValidateErrorTextOnSignInpage" finished-at="2020-11-28T19:20:41Z" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAbleToValidateErrorTextOnSignInpage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Two_LoginFailure@71e9ddb4]" started-at="2020-11-28T19:20:41Z" name="afterMethod" finished-at="2020-11-28T19:20:41Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Two_LoginFailure@71e9ddb4]" started-at="2020-11-28T19:20:41Z" name="afterClass" finished-at="2020-11-28T19:20:41Z" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Two_LoginFailure -->
+      <class name="testCases.Five_Drag_and_drop">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Five_Drag_and_drop@5aebe890]" started-at="2020-11-28T19:20:49Z" name="beforeClass" finished-at="2020-11-28T19:20:50Z" duration-ms="886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Five_Drag_and_drop@5aebe890]" started-at="2020-11-28T19:20:50Z" name="beforeMethod" finished-at="2020-11-28T19:20:50Z" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="drag_and_drop()[pri:0, instance:testCases.Five_Drag_and_drop@5aebe890]" started-at="2020-11-28T19:20:50Z" name="drag_and_drop" finished-at="2020-11-28T19:20:53Z" duration-ms="2471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drag_and_drop -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Five_Drag_and_drop@5aebe890]" started-at="2020-11-28T19:20:53Z" name="afterClass" finished-at="2020-11-28T19:20:53Z" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Five_Drag_and_drop@5aebe890]" started-at="2020-11-28T19:20:53Z" name="afterMethod" finished-at="2020-11-28T19:20:53Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.Five_Drag_and_drop -->
+      <class name="testCases.Fifteen_JavascriptAlert">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Fifteen_JavascriptAlert@385e9564]" started-at="2020-11-28T19:21:41Z" name="beforeClass" finished-at="2020-11-28T19:21:42Z" duration-ms="901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Fifteen_JavascriptAlert@385e9564]" started-at="2020-11-28T19:21:42Z" name="beforeMethod" finished-at="2020-11-28T19:21:42Z" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="javascriptAlert_15()[pri:0, instance:testCases.Fifteen_JavascriptAlert@385e9564]" started-at="2020-11-28T19:21:42Z" name="javascriptAlert_15" finished-at="2020-11-28T19:21:55Z" duration-ms="12342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javascriptAlert_15 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Fifteen_JavascriptAlert@385e9564]" started-at="2020-11-28T19:21:55Z" name="afterMethod" finished-at="2020-11-28T19:21:55Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Fifteen_JavascriptAlert@385e9564]" started-at="2020-11-28T19:21:55Z" name="afterClass" finished-at="2020-11-28T19:21:55Z" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Fifteen_JavascriptAlert -->
+      <class name="testCases.Thirteen_Iframe">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Thirteen_Iframe@399c4be1]" started-at="2020-11-28T19:21:21Z" name="beforeClass" finished-at="2020-11-28T19:21:22Z" duration-ms="911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Thirteen_Iframe@399c4be1]" started-at="2020-11-28T19:21:22Z" name="beforeMethod" finished-at="2020-11-28T19:21:22Z" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="iframe_13()[pri:0, instance:testCases.Thirteen_Iframe@399c4be1]" started-at="2020-11-28T19:21:22Z" name="iframe_13" finished-at="2020-11-28T19:21:30Z" duration-ms="7451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iframe_13 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Thirteen_Iframe@399c4be1]" started-at="2020-11-28T19:21:30Z" name="afterClass" finished-at="2020-11-28T19:21:30Z" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Thirteen_Iframe@399c4be1]" started-at="2020-11-28T19:21:30Z" name="afterMethod" finished-at="2020-11-28T19:21:30Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.Thirteen_Iframe -->
+      <class name="testCases.Eighteen_NotificaitonMessage">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Eighteen_NotificaitonMessage@4c39bec8]" started-at="2020-11-28T19:22:04Z" name="beforeClass" finished-at="2020-11-28T19:22:05Z" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Eighteen_NotificaitonMessage@4c39bec8]" started-at="2020-11-28T19:22:05Z" name="beforeMethod" finished-at="2020-11-28T19:22:05Z" duration-ms="389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="notificaitonMessage_18()[pri:0, instance:testCases.Eighteen_NotificaitonMessage@4c39bec8]" started-at="2020-11-28T19:22:05Z" name="notificaitonMessage_18" finished-at="2020-11-28T19:22:08Z" duration-ms="3300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notificaitonMessage_18 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Eighteen_NotificaitonMessage@4c39bec8]" started-at="2020-11-28T19:22:08Z" name="afterClass" finished-at="2020-11-28T19:22:08Z" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Eighteen_NotificaitonMessage@4c39bec8]" started-at="2020-11-28T19:22:08Z" name="afterMethod" finished-at="2020-11-28T19:22:08Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.Eighteen_NotificaitonMessage -->
+      <class name="testCases.Sixteen_JavascriptError">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCases.Sixteen_JavascriptError@5b94b04d]" started-at="2020-11-28T19:21:55Z" name="beforeClass" finished-at="2020-11-28T19:21:56Z" duration-ms="788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Sixteen_JavascriptError@5b94b04d]" started-at="2020-11-28T19:21:56Z" name="beforeMethod" finished-at="2020-11-28T19:21:56Z" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="javascriptError_16()[pri:0, instance:testCases.Sixteen_JavascriptError@5b94b04d]" started-at="2020-11-28T19:21:56Z" name="javascriptError_16" finished-at="2020-11-28T19:21:57Z" duration-ms="1068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javascriptError_16 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Sixteen_JavascriptError@5b94b04d]" started-at="2020-11-28T19:21:57Z" name="afterMethod" finished-at="2020-11-28T19:21:57Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Sixteen_JavascriptError@5b94b04d]" started-at="2020-11-28T19:21:57Z" name="afterClass" finished-at="2020-11-28T19:21:57Z" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Sixteen_JavascriptError -->
+    </test> <!-- TestSuite -->
+  </suite> <!-- IntegratedFuncational -->
 </testng-results>
